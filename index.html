@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script type="text/javascript" src="pokemon_json.json"></script>
+  <script type="text/javascript" src="action.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<title></title>
+</head>
+
+<body id="body1" onload="json1()">
+
+<nav id="barra" class="navbar navbar-light bg-red">
+  <img id="logo" src="./img/logo.png">
+  <!-- <a class="navbar-brand">Na vbar</a> -->
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" id="search" type="search" placeholder="Buscar Pokemones" aria-label="Search" onkeyup="buscar()">
+  </form>
+   <!-- <button class=" botonVerde" type="submit" onclick="buscar()">Buscar</button>-->
+</nav>	
+
+<div class='input'>
+
+ <div class="form-group">
+<!--     <label for="exampleFormControlInput1">Name</label> -->
+    <input id="nombre" type="Nombre" class="form-control" id="exampleFormControlInput1" placeholder="name">
+  </div>
+
+<div class="form-group">
+<!--     <label for="exampleFormControlInput1">Id</label> -->
+    <input id="idP" type="email" class="form-control" id="exampleFormControlInput1" placeholder="id">
+  </div>
+
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Type Select</label>
+    <select id="typeP" class="form-control" id="exampleFormControlSelect1">
+      <option value="fire.png">fire</option>
+      <option value="fighting.png">fighting</option>
+      <option value="fairy.png">fairy</option>
+      <option value="water.png">water</option>
+      <option value="grass.png">grass</option>
+      <option value="electric.png">electric</option>
+      <option value="ghost.png">ghost</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Image Select</label>
+    <select id="photoP" class="form-control" id="exampleFormControlSelect1">
+      <option value="01.jpg">Charmander</option>
+      <option value="02.jpg">Kanjaskan</option>
+      <option value="03.jpg">Mewtwo</option>
+      <option value="04.jpg">Blastoise</option>
+      <option value="05.jpg">Bulbasaur</option>
+      <option value="06.jpg">Magikarp</option>
+      <option value="07.jpg">Pikachu</option>
+      <option value="08.jpg">Gengar</option>
+      <option value="09.jpg">Vamoacalmarno</option>
+
+    </select>
+  </div>
+  <button onclick="agregar()">Save</button>
+</div>
+<div id="result"></div>
+
+
+
+
+
+<span></span>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
